@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import ProductSection from "@/components/ProductSection";
+import ProductQuiz from "@/components/ProductQuiz";
 import PreOrderForm from "@/components/PreOrderForm";
 import HowItWorks from "@/components/HowItWorks";
 import FAQ from "@/components/FAQ";
@@ -69,6 +70,7 @@ export default function Home() {
       </section>
 
       <ProductSection />
+      <ProductQuiz />
       <HowItWorks />
 
       {/* Pre-Order Form */}
