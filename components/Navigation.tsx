@@ -31,9 +31,10 @@ export default function Navigation() {
         {/* Logo */}
         <a
           href="/"
-          className="font-playfair italic text-xl font-semibold text-charcoal tracking-wide"
+          className="font-playfair italic text-xl font-semibold tracking-wide"
         >
-          june <span className="text-rose-500">de belle</span>
+          <span className={`transition-colors duration-500 ${scrolled ? "text-charcoal" : "text-white"}`}>june</span>{" "}
+          <span className="text-rose-500">de belle</span>
         </a>
 
         {/* Desktop nav */}
