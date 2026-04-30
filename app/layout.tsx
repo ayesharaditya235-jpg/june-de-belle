@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, DM_Sans } from "next/font/google";
+import { Playfair_Display, DM_Sans, Old_Standard_TT } from "next/font/google";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -15,6 +15,14 @@ const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   display: "swap",
   weight: ["300", "400", "500", "600", "700"],
+});
+
+const oldStandard = Old_Standard_TT({
+  subsets: ["latin"],
+  variable: "--font-old-standard",
+  display: "swap",
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -45,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${playfair.variable} ${dmSans.variable} font-sans antialiased`}
+        className={`${playfair.variable} ${dmSans.variable} ${oldStandard.variable} font-sans antialiased`}
       >
         {children}
       </body>

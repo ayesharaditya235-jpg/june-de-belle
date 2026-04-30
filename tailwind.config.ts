@@ -28,6 +28,7 @@ const config: Config = {
       fontFamily: {
         playfair: ["var(--font-playfair)", "Georgia", "serif"],
         sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
+        oldstandard: ["var(--font-old-standard)", "Georgia", "serif"],
       },
       animation: {
         "fade-up": "fadeUp 0.7s ease-out forwards",

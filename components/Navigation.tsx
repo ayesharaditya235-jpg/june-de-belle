@@ -29,12 +29,23 @@ export default function Navigation() {
     >
       <div className="container-max flex items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <a
-          href="/"
-          className="font-playfair italic text-xl font-semibold tracking-wide"
-        >
-          <span className={`transition-colors duration-500 ${scrolled ? "text-charcoal" : "text-white"}`}>june</span>{" "}
-          <span className="text-rose-500">de belle</span>
+        <a href="/" className="flex items-center gap-2">
+          <div className="relative h-8 w-8 flex-shrink-0">
+            <img
+              src="/logo-white.png"
+              alt=""
+              className={`absolute inset-0 h-8 w-auto transition-opacity duration-500 ${scrolled ? "opacity-0" : "opacity-100"}`}
+            />
+            <img
+              src="/logo-dark.png"
+              alt=""
+              className={`absolute inset-0 h-8 w-auto transition-opacity duration-500 ${scrolled ? "opacity-100" : "opacity-0"}`}
+            />
+          </div>
+          <span className="font-oldstandard italic text-xl font-bold tracking-wide">
+            <span className={`transition-colors duration-500 ${scrolled ? "text-charcoal" : "text-white"}`}>June</span>{" "}
+            <span className="text-rose-500">de Belle</span>
+          </span>
         </a>
 
         {/* Desktop nav */}

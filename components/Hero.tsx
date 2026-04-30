@@ -53,8 +53,8 @@ export default function Hero() {
           </h1>
 
           {/* Brand name */}
-          <p className="font-playfair italic text-rose-300 text-xl sm:text-2xl mb-4 animate-fade-up [animation-delay:0.1s]">
-            — june de belle
+          <p className="font-oldstandard italic text-rose-300 text-xl sm:text-2xl mb-4 animate-fade-up [animation-delay:0.1s]">
+            — June de Belle
           </p>
 
           {/* Sub description */}

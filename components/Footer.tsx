@@ -9,8 +9,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
           {/* Brand */}
           <div>
-            <p className="font-playfair italic text-2xl font-semibold mb-3">
-              june <span className="text-rose-400">de belle</span>
+            <p className="font-oldstandard italic text-2xl font-bold mb-3">
+              June <span className="text-rose-400">de Belle</span>
             </p>
             <p className="font-sans text-sm text-white/50 leading-relaxed max-w-xs">
               Aesthetic bags & organizers for the modern student. Carry everything you love,
