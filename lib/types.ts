@@ -21,6 +21,7 @@ export interface ProductVariant {
   color: string;
   productImage?: string;
   modelImage?: string;
+  insideImage?: string;
 }
 
 export interface Product {
