@@ -19,6 +19,8 @@ export interface Order {
 export interface ProductVariant {
   name: string;
   color: string;
+  productImage?: string;
+  modelImage?: string;
 }
 
 export interface Product {

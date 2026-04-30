@@ -17,8 +17,18 @@ export const PRODUCTS: Product[] = [
       "Padded laptop sleeve",
     ],
     variants: [
-      { name: "Navy Rue", color: "#2B4A7A" },
-      { name: "Pink Lou", color: "#F4B8CC" },
+      {
+        name: "Navy Rue",
+        color: "#2B4A7A",
+        productImage: "/products/Tote Bag Navy Rue → foto produk .png",
+        modelImage: "/products/Tote Bag Navy Rue → foto model.png",
+      },
+      {
+        name: "Pink Lou",
+        color: "#F4B8CC",
+        productImage: "/products/Tote Bag Pink Lou → foto produk.png",
+        modelImage: "/products/Tote Bag Pink Lou →  foto model.png",
+      },
     ],
     gradientFrom: "#FAEDF4",
     gradientTo: "#F5D5E6",
@@ -39,8 +49,18 @@ export const PRODUCTS: Product[] = [
       "Detachable wrist strap",
     ],
     variants: [
-      { name: "Sweet June", color: "#F9C5D1" },
-      { name: "Brown Bon", color: "#9C7059" },
+      {
+        name: "Sweet June",
+        color: "#F9C5D1",
+        productImage: "/products/Compact Pencil Case Sweet June → foto produk.png",
+        modelImage: "/products/Compact Pencil Case Sweet June →  foto model.png",
+      },
+      {
+        name: "Brown Bon",
+        color: "#9C7059",
+        productImage: "/products/Compact Pencil Case Brown Bon → foto produk.png",
+        modelImage: "/products/Compact Pencil Case Brown Bon →foto model.png",
+      },
     ],
     gradientFrom: "#F3E8FF",
     gradientTo: "#FAEDF4",
