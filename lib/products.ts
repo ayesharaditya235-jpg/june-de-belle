@@ -7,14 +7,14 @@ export const PRODUCTS: Product[] = [
     nameId: "Totebag",
     price: "Rp 135.000",
     description:
-      "Your perfect school companion. Roomy enough for textbooks, ergonomic enough for all-day comfort. Carry everything you love, in style.",
+      "Your perfect school companion. Spacious enough to carry everything you need — from textbooks to your tumbler — without breaking a sweat.",
     material: "Premium Canvas",
     dimensions: "34 × 40 × 12 cm",
     features: [
-      "Reinforced shoulder straps",
-      "Inner zipper pocket",
-      "Water-resistant lining",
-      "Padded laptop sleeve",
+      "High-capacity interior fits textbooks, tumbler & more",
+      "Interior zip pocket for valuables",
+      "Separate laptop compartment (fits up to 16 inch)",
+      "Outer pocket for easy access",
     ],
     variants: [
       {
@@ -39,14 +39,14 @@ export const PRODUCTS: Product[] = [
     nameId: "Tempat Pensil",
     price: "Rp 69.500",
     description:
-      "Keep your stationery perfectly organized. Compact, chic, and effortlessly accessible — because your desk deserves to look this good.",
-    material: "Vegan PU Leather",
+      "A compact pencil case fit for everyday use. Fits your pens, erasers, and little things without feeling bulky.",
+    material: "Faux Leather",
     dimensions: "7 × 19 × 1.5 cm",
     features: [
-      "Double zipper closure",
-      "Pen loops inside",
-      "Soft velvet interior",
-      "Detachable wrist strap",
+      "Compact & lightweight design",
+      "Fits pens, erasers & small essentials",
+      "Perfect for minimalists",
+      "Heart-shaped zip opening",
     ],
     variants: [
       {
