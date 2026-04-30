@@ -44,7 +44,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
       {/* Image area */}
       <div
-        className="relative h-56 sm:h-64 overflow-hidden flex items-center justify-center"
+        className="relative aspect-[3/4] overflow-hidden flex items-center justify-center"
         style={
           !hasImages
             ? {
