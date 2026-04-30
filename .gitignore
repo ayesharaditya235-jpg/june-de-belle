@@ -1,2 +1,5 @@
-node_modules/ 
-.next/ 
+node_modules/
+.next/
+.agents/
+.claude/skills/
+skills-lock.json
