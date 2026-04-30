@@ -14,9 +14,10 @@ export default function Navigation() {
   }, []);
 
   const links = [
-    { label: "Collection", href: "#products" },
-    { label: "How It Works", href: "#how-it-works" },
-    { label: "FAQ", href: "#faq" },
+    { label: "Collection", href: "#products", highlight: false },
+    { label: "Find Your Match ✨", href: "#quiz", highlight: true },
+    { label: "How It Works", href: "#how-it-works", highlight: false },
+    { label: "FAQ", href: "#faq", highlight: false },
   ];
 
   return (
@@ -54,7 +55,11 @@ export default function Navigation() {
             <a
               key={l.href}
               href={l.href}
-              className="font-sans text-sm text-charcoal/70 hover:text-rose-600 transition-colors duration-200 tracking-wide"
+              className={`font-sans text-sm transition-colors duration-200 tracking-wide ${
+                l.highlight
+                  ? "text-rose-500 hover:text-rose-600 font-medium"
+                  : "text-charcoal/70 hover:text-rose-600"
+              }`}
             >
               {l.label}
             </a>

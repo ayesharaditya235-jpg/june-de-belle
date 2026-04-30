@@ -70,7 +70,9 @@ export default function Home() {
       </section>
 
       <ProductSection />
-      <ProductQuiz />
+      <section id="quiz">
+        <ProductQuiz />
+      </section>
       <HowItWorks />
 
       {/* Pre-Order Form */}
