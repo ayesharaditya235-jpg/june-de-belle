@@ -30,16 +30,16 @@ export default function Navigation() {
       <div className="container-max flex items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2">
-          <div className="relative h-8 w-8 flex-shrink-0">
+          <div className="relative h-8 w-auto flex-shrink-0">
             <img
               src="/logo-white.png"
               alt=""
-              className={`absolute inset-0 h-8 w-auto transition-opacity duration-500 ${scrolled ? "opacity-0" : "opacity-100"}`}
+              className={`absolute inset-0 h-8 w-auto object-contain transition-opacity duration-500 ${scrolled ? "opacity-0" : "opacity-100"}`}
             />
             <img
               src="/logo-dark.png"
               alt=""
-              className={`absolute inset-0 h-8 w-auto transition-opacity duration-500 ${scrolled ? "opacity-100" : "opacity-0"}`}
+              className={`h-8 w-auto object-contain transition-opacity duration-500 ${scrolled ? "opacity-100" : "opacity-0"}`}
             />
           </div>
           <span className="font-oldstandard italic text-xl font-bold tracking-wide">
