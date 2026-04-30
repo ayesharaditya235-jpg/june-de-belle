@@ -172,9 +172,20 @@ export default function ProductQuiz() {
           ) : (
             /* Result card */
             <div className="bg-white rounded-3xl border border-rose-100 shadow-sm overflow-hidden">
+              {/* Product image */}
+              {resultProduct!.variants[0]?.productImage && (
+                <div className="w-full h-[200px] bg-rose-50 flex items-center justify-center">
+                  <img
+                    src={resultProduct!.variants[0].productImage}
+                    alt={resultProduct!.name}
+                    className="h-full w-full object-contain rounded-t-3xl"
+                  />
+                </div>
+              )}
+
               {/* Result header */}
               <div
-                className="px-8 pt-8 pb-6"
+                className="px-8 pt-6 pb-6"
                 style={{
                   background: `linear-gradient(135deg, ${resultProduct!.gradientFrom} 0%, ${resultProduct!.gradientTo} 100%)`,
                 }}
