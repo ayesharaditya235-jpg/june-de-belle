@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background-color: #f9b4c8;
+    color: #1a1a1a;
+  }
+
+  body {
+    @apply font-sans antialiased text-charcoal bg-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-rose-600 text-white
+           px-7 py-3.5 rounded-full
+           font-sans font-medium text-sm tracking-wide
+           transition-all duration-300
+           hover:bg-rose-500 hover:shadow-xl hover:shadow-rose-200/60 hover:-translate-y-0.5
+           active:translate-y-0 active:shadow-none
+           focus:outline-none focus:ring-2 focus:ring-rose-400 focus:ring-offset-2
+           disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2
+           border-2 border-rose-600 text-rose-600
+           px-7 py-3.5 rounded-full
+           font-sans font-medium text-sm tracking-wide
+           transition-all duration-300
+           hover:bg-rose-600 hover:text-white hover:shadow-xl hover:shadow-rose-200/60 hover:-translate-y-0.5
+           active:translate-y-0
+           focus:outline-none focus:ring-2 focus:ring-rose-400 focus:ring-offset-2;
+  }
+
+  .btn-wa {
+    @apply inline-flex items-center justify-center gap-2
+           bg-[#25D366] text-white
+           px-7 py-3.5 rounded-full
+           font-sans font-medium text-sm tracking-wide
+           transition-all duration-300
+           hover:bg-[#1da851] hover:shadow-xl hover:shadow-green-200/60 hover:-translate-y-0.5
+           active:translate-y-0
+           focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-3
+           bg-white border border-rose-100 rounded-xl
+           font-sans text-sm text-charcoal placeholder-gray-400
+           transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-rose-300/60 focus:border-rose-300
+           hover:border-rose-200;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-charcoal/80 mb-1.5;
+  }
+
+  .section-padding {
+    @apply py-24 px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-rose-600 via-rose-500 to-rose-400 bg-clip-text text-transparent;
+  }
+
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/60;
+  }
+
+  .section-bg-alt {
+    background: linear-gradient(135deg, #fdf6f9 0%, #fff 50%, #faedf4 100%);
+  }
+}
