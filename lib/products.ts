@@ -3,13 +3,13 @@ import type { Product } from "./types";
 export const PRODUCTS: Product[] = [
   {
     id: "totebag",
-    name: "Signature Tote Bag",
+    name: "Tote Bag",
     nameId: "Totebag",
-    price: "Rp 149.000",
+    price: "Rp 135.000",
     description:
       "Your perfect school companion. Roomy enough for textbooks, ergonomic enough for all-day comfort. Carry everything you love, in style.",
     material: "Premium Canvas",
-    dimensions: "38 × 34 × 10 cm",
+    dimensions: "34 × 40 × 12 cm",
     features: [
       "Reinforced shoulder straps",
       "Inner zipper pocket",
@@ -17,22 +17,21 @@ export const PRODUCTS: Product[] = [
       "Padded laptop sleeve",
     ],
     variants: [
-      { name: "Blush Pink", color: "#F9B4C8" },
-      { name: "Ivory White", color: "#F5F2EE" },
-      { name: "Midnight Black", color: "#1A1A1A" },
+      { name: "Navy Rue", color: "#2B4A7A" },
+      { name: "Pink Lou", color: "#F4B8CC" },
     ],
     gradientFrom: "#FAEDF4",
     gradientTo: "#F5D5E6",
   },
   {
     id: "pencilcase",
-    name: "Luxe Pencil Case",
+    name: "Compact Pencil Case",
     nameId: "Tempat Pensil",
-    price: "Rp 79.000",
+    price: "Rp 69.500",
     description:
       "Keep your stationery perfectly organized. Compact, chic, and effortlessly accessible — because your desk deserves to look this good.",
     material: "Vegan PU Leather",
-    dimensions: "22 × 7 × 7 cm",
+    dimensions: "7 × 19 × 1.5 cm",
     features: [
       "Double zipper closure",
       "Pen loops inside",
@@ -40,10 +39,8 @@ export const PRODUCTS: Product[] = [
       "Detachable wrist strap",
     ],
     variants: [
-      { name: "Blush Pink", color: "#F9B4C8" },
-      { name: "Ivory White", color: "#F5F2EE" },
-      { name: "Midnight Black", color: "#1A1A1A" },
-      { name: "Lavender Dream", color: "#D8B4FE" },
+      { name: "Sweet June", color: "#F9C5D1" },
+      { name: "Brown Bon", color: "#9C7059" },
     ],
     gradientFrom: "#F3E8FF",
     gradientTo: "#FAEDF4",
