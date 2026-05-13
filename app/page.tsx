@@ -33,16 +33,16 @@ export default function Home() {
       <Hero />
 
       {/* Trust bar */}
-      <section className="py-10 px-4 sm:px-6 lg:px-8" style={{background: "#fce7f3"}}>
+      <section className="py-10 px-4 sm:px-6 lg:px-8" style={{background: "#dbeafe"}}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-4">
           {TRUST_ITEMS.map(({ icon: Icon, title, desc }) => (
             <div key={title} className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-xl bg-rose-50 flex items-center justify-center flex-shrink-0">
-                <Icon size={20} className="text-rose-500" strokeWidth={1.5} />
+              <div className="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0">
+                <Icon size={20} className="text-blue-500" strokeWidth={1.5} />
               </div>
               <div>
-                <p className="font-sans font-semibold text-sm text-charcoal">{title}</p>
-                <p className="font-sans text-xs text-gray-500 mt-0.5 leading-relaxed">{desc}</p>
+                <p className="font-sans font-semibold text-sm text-blue-900">{title}</p>
+                <p className="font-sans text-xs text-blue-700/70 mt-0.5 leading-relaxed">{desc}</p>
               </div>
             </div>
           ))}
