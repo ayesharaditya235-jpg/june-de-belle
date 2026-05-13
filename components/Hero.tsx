@@ -1,103 +1,95 @@
 'use client'
 import CountdownTimer from "./CountdownTimer";
-import { Sparkles, ArrowDown } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
-      {/* Background */}
-      <div
-        className="absolute inset-0 -z-10"
-        style={{
-          background:
-            "linear-gradient(135deg, #1A1A1A 0%, #2D0D1A 40%, #5A1C39 70%, #A33968 100%)",
-        }}
-      />
 
-      {/* Decorative circles */}
-      <div className="absolute top-20 right-0 w-[600px] h-[600px] rounded-full -z-10 opacity-20 blur-3xl"
-        style={{ background: "radial-gradient(circle, #E879A8 0%, transparent 70%)" }} />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full -z-10 opacity-15 blur-3xl"
-        style={{ background: "radial-gradient(circle, #F9B4C8 0%, transparent 70%)" }} />
+      {/* Background foto */}
+      <div className="absolute inset-0">
+        <img
+          src="/products/Tote Bag Navy Rue → foto model.png"
+          alt="June de Belle"
+          className="w-full h-full object-cover object-top"
+        />
+        <div className="absolute inset-0" style={{
+          background: "linear-gradient(to bottom, rgba(255,182,193,0.3) 0%, rgba(180,60,100,0.55) 60%, rgba(255,182,193,0.8) 100%)"
+        }} />
+      </div>
 
-      {/* Floating orbs */}
-      <div className="absolute top-1/4 right-1/4 w-3 h-3 rounded-full bg-rose-300/40 animate-float" />
-      <div className="absolute top-1/3 right-1/3 w-2 h-2 rounded-full bg-rose-200/30 animate-float [animation-delay:1s]" />
-      <div className="absolute bottom-1/3 right-1/5 w-4 h-4 rounded-full bg-rose-400/20 animate-float [animation-delay:2s]" />
-      <div className="absolute top-1/2 left-1/4 w-2 h-2 rounded-full bg-blush/30 animate-float [animation-delay:0.5s]" />
-
-      {/* Grid overlay */}
-      <div className="absolute inset-0 -z-10 opacity-5"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(249,180,200,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(249,180,200,0.3) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
-      />
-
-      <div className="container-max px-4 sm:px-6 lg:px-8 pt-28 pb-20">
-        <div className="max-w-4xl">
-          {/* Pre-order badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-rose-500/30 bg-rose-500/10 mb-8 animate-fade-in">
-            <Sparkles size={14} className="text-rose-300" />
-            <span className="font-sans text-rose-200 text-xs tracking-widest uppercase font-medium">
-              Pre-Order Now Open
-            </span>
-          </div>
-
-          {/* Main heading */}
-          <h1 className="font-playfair text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.05] tracking-tight mb-6 animate-fade-up">
-            Carry Your Day,
-            <br />
-            <em className="font-playfair italic text-gradient-hero">In Style.</em>
-          </h1>
-
-          {/* Brand name */}
-          <p className="font-oldstandard italic font-bold text-rose-300 text-xl sm:text-2xl mb-4 animate-fade-up [animation-delay:0.1s]">
-            — June de Belle
-          </p>
-
-          {/* Sub description */}
-          <p className="font-sans text-white/60 text-base sm:text-lg max-w-xl leading-relaxed mb-10 animate-fade-up [animation-delay:0.2s]">
-            Aesthetic bags & organizers crafted for the modern student. Lightweight,
-            ergonomic, and effortlessly beautiful — designed to carry everything you love.
-          </p>
-
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-14 animate-fade-up [animation-delay:0.3s]">
-            <a href="#order" className="btn-primary px-9 py-4 text-base">
-              Pre-Order Now
-            </a>
-            <a
-              href="#products"
-              className="inline-flex items-center gap-2 font-sans text-sm text-white/70 hover:text-white transition-colors"
-            >
-              View Collection
-              <ArrowDown size={16} />
-            </a>
-          </div>
-
-          {/* Countdown */}
-          <div className="animate-fade-up [animation-delay:0.4s]">
-            <p className="font-sans text-xs text-rose-200/60 uppercase tracking-widest mb-4">
-              Pre-order closes in
-            </p>
-            <CountdownTimer />
+      {/* Floating frame LEFT */}
+      <div className="absolute left-6 sm:left-12 top-1/2 -translate-y-1/2 z-20 hidden sm:block">
+        <div style={{animation: "floatY 4s ease-in-out infinite"}}>
+          <div className="w-40 sm:w-52 aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl shadow-rose-300/50 -rotate-6 hover:rotate-0 transition-transform duration-500 border-4 border-white">
+            <img src="/products/Tote Bag Pink Lou → foto produk.png" alt="Tote Bag Pink" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce opacity-50">
-        <ArrowDown size={16} className="text-white" />
+      {/* Floating frames RIGHT */}
+      <div className="absolute right-6 sm:right-12 top-1/2 -translate-y-1/2 z-20 hidden sm:flex flex-col gap-4">
+        <div style={{animation: "floatY 4s ease-in-out infinite 1s"}}>
+          <div className="w-32 sm:w-40 aspect-[3/4] rounded-2xl overflow-hidden shadow-xl shadow-rose-200/50 rotate-6 hover:rotate-0 transition-transform duration-500 border-4 border-white">
+            <img src="/products/Tote Bag Pink Lou → foto model.png" alt="Tote Bag Pink model" className="w-full h-full object-cover" />
+          </div>
+        </div>
+        <div style={{animation: "floatY 4s ease-in-out infinite 2s"}}>
+          <div className="w-28 sm:w-36 aspect-[3/4] rounded-2xl overflow-hidden shadow-xl shadow-rose-200/50 -rotate-3 hover:rotate-0 transition-transform duration-500 border-4 border-white ml-4">
+            <img src="/products/Compact Pencil Case Sweet June → foto produk.png" alt="Pencil Case" className="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 container-max px-4 sm:px-6 lg:px-8 pt-32 pb-48 flex flex-col items-center text-center">
+
+        <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/30 backdrop-blur-sm border border-white/50 mb-8">
+          <span className="text-white text-xs font-sans font-medium tracking-widest uppercase">✨ Pre-Order Now Open</span>
+        </div>
+
+        <h1 className="font-playfair text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight mb-4 drop-shadow-lg">
+          Carry Your Day,
+          <br />
+          <em className="italic text-pink-100">In Style.</em>
+        </h1>
+
+        <p className="font-oldstandard italic text-pink-200 text-xl mb-6">— June de Belle</p>
+
+        <p className="font-sans text-white/80 text-base sm:text-lg max-w-md leading-relaxed mb-10">
+          Aesthetic bags & organizers crafted for the modern student.
+        </p>
+
+        <div className="flex flex-col sm:flex-row items-center gap-4 mb-12">
+          <a href="#order" className="bg-white text-rose-500 font-sans font-semibold px-8 py-4 rounded-full hover:bg-pink-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+            Pre-Order Now 🛍️
+          </a>
+          <a href="#products" className="font-sans text-sm text-white/80 hover:text-white flex items-center gap-2 transition-colors">
+            View Collection <ArrowDown size={15} />
+          </a>
+        </div>
+
+        <div>
+          <p className="font-sans text-xs text-pink-200/80 uppercase tracking-widest mb-3">Pre-order closes in</p>
+          <CountdownTimer />
+        </div>
+      </div>
+
+      {/* Wavy bottom */}
+      <div className="absolute bottom-0 left-0 right-0 z-10">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" className="w-full" style={{height: "80px", display: "block"}} fill="white">
+          <path d="M0,40 C80,80 160,0 240,40 C320,80 400,0 480,40 C560,80 640,0 720,40 C800,80 880,0 960,40 C1040,80 1120,0 1200,40 C1280,80 1360,20 1440,40 L1440,80 L0,80 Z" />
+        </svg>
+      </div>
+
+      <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-10 animate-bounce opacity-60">
+        <ArrowDown size={18} className="text-white" />
       </div>
 
       <style jsx>{`
-        .text-gradient-hero {
-          background: linear-gradient(90deg, #f9b4c8 0%, #e879a8 50%, #c94f82 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
+        @keyframes floatY {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-12px); }
         }
       `}</style>
     </section>

@@ -103,8 +103,6 @@ export default function PreOrderForm() {
     if (!validate()) return;
     setStatus("loading");
     try {
-      const productStr = selectedItems.map((i) => `${i.productName} (${i.variantName})`).join(", ");
-      const variantStr = selectedItems.map((i) => i.variantName).join(", ");
       const res = await fetch("/api/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -112,8 +110,7 @@ export default function PreOrderForm() {
           name: fields.name,
           whatsapp: fields.whatsapp,
           email: fields.email,
-          product: productStr,
-          variant: variantStr,
+          items: selectedItems.map((i) => ({ product: i.productId, variant: i.variantName })),
           notes: fields.notes,
         }),
       });

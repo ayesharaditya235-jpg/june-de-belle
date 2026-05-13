@@ -33,7 +33,7 @@ export default function Home() {
       <Hero />
 
       {/* Trust bar */}
-      <section className="bg-white border-y border-rose-100 py-10 px-4 sm:px-6 lg:px-8">
+      <section className="py-10 px-4 sm:px-6 lg:px-8" style={{background: "#fce7f3"}}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-4">
           {TRUST_ITEMS.map(({ icon: Icon, title, desc }) => (
             <div key={title} className="flex items-start gap-4">
@@ -50,7 +50,7 @@ export default function Home() {
       </section>
 
       {/* Problem / About strip */}
-      <section className="section-padding bg-rose-50/50">
+      <section className="section-padding" style={{background: "#fdf2f8"}}>
         <div className="container-max">
           <div className="max-w-3xl mx-auto text-center">
             <p className="font-sans text-rose-500 text-xs uppercase tracking-widest font-medium mb-4">
@@ -70,7 +70,7 @@ export default function Home() {
       </section>
 
       <ProductSection />
-      <section id="quiz">
+      <section id="quiz" style={{background: "#fce7f3"}}>
         <ProductQuiz />
       </section>
       <HowItWorks />

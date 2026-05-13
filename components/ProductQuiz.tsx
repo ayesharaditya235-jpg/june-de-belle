@@ -86,7 +86,7 @@ export default function ProductQuiz() {
   const progress = ((currentQ) / questions.length) * 100;
 
   return (
-    <section className="section-padding bg-cream">
+    <section className="section-padding bg-transparent">
       <div className="container-max px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
