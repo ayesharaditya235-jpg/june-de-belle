@@ -74,7 +74,7 @@ export const PRODUCTS: Product[] = [
     nameId: "Inner Bag Pouch Organizer",
     price: null,
     description:
-      "The ultimate bag organizer. Everything in its place, accessible in seconds. Switch between bags without losing a single thing.",
+      "Coming Soon\nStill being perfected for you. Available in two sizes — fits medium & large backpacks. Join the pre-order waitlist to be the first to know when it's ready!",
     material: "Canvas + PU Lining",
     dimensions: "Coming soon",
     features: [

@@ -123,7 +123,7 @@ export default function ProductCard({ product }: { product: Product }) {
           )}
         </div>
 
-        <p className="font-sans text-xs text-gray-400 leading-relaxed mb-4">{product.description}</p>
+        <p className="font-sans text-xs text-gray-400 leading-relaxed mb-4 whitespace-pre-line">{product.description}</p>
 
         {/* Features */}
         <ul className="space-y-1 mb-5">
