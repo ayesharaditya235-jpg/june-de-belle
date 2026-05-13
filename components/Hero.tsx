@@ -27,16 +27,11 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Floating frames RIGHT */}
-      <div className="absolute right-6 sm:right-12 top-1/2 -translate-y-1/2 z-20 hidden sm:flex flex-col gap-4">
+      {/* Floating frame RIGHT */}
+      <div className="absolute right-6 sm:right-12 top-1/2 -translate-y-1/2 z-20 hidden sm:block">
         <div style={{animation: "floatY 4s ease-in-out infinite 1s"}}>
           <div className="w-32 sm:w-40 aspect-[3/4] rounded-2xl overflow-hidden shadow-xl shadow-rose-200/50 rotate-6 hover:rotate-0 transition-transform duration-500 border-4 border-white">
-            <img src="/products/Tote Bag Pink Lou → foto model.png" alt="Tote Bag Pink model" className="w-full h-full object-cover" />
-          </div>
-        </div>
-        <div style={{animation: "floatY 4s ease-in-out infinite 2s"}}>
-          <div className="w-28 sm:w-36 aspect-[3/4] rounded-2xl overflow-hidden shadow-xl shadow-rose-200/50 -rotate-3 hover:rotate-0 transition-transform duration-500 border-4 border-white ml-4">
-            <img src="/products/Compact Pencil Case Sweet June → foto produk.png" alt="Pencil Case" className="w-full h-full object-cover" />
+            <img src="/products/Tote Bag Pink Lou →  foto model.png" alt="Tote Bag Pink model" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
