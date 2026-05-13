@@ -12,6 +12,12 @@ Landing page pre-order untuk brand tas \& organizer pelajar SMA.
 
 
 
+\## Screenshot
+
+!\[June de Belle](./public/screenshot.png)
+
+
+
 \## Tentang Aplikasi
 
 June de Belle adalah platform pre-order online untuk produk tas \& organizer 
