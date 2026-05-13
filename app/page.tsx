@@ -70,7 +70,10 @@ export default function Home() {
       </section>
 
       <ProductSection />
-      <section id="quiz" style={{background: "#fce7f3"}}>
+      <section id="quiz" style={{
+          backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 19px, #f9a8d4 19px, #f9a8d4 20px), repeating-linear-gradient(90deg, transparent, transparent 19px, #f9a8d4 19px, #f9a8d4 20px)`,
+          backgroundColor: "#fdf2f8"
+        }}>
         <ProductQuiz />
       </section>
       <HowItWorks />
