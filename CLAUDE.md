@@ -54,6 +54,12 @@ barang berantakan. Solusi: produk ergonomis, ringan, estetik dengan sistem PO on
 
 \- DO: simpan API key di .env.local
 
+\- DON'T: commit .env.local atau file apapun yang berisi API key ke Git
+
+\- DON'T: accept semua saran AI tanpa dibaca, terutama yang menyentuh file konfigurasi
+
+\- DO: cek .gitignore sebelum commit pertama
+
 \- DO: aktifkan RLS di setiap tabel Supabase
 
 \- DON'T: hardcode API key di file .ts/.tsx
