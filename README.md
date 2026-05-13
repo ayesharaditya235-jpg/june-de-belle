@@ -14,7 +14,7 @@ Landing page pre-order untuk brand tas \& organizer pelajar SMA.
 
 \## Screenshot
 
-!\[June de Belle](./public/screenshot.png)
+!\[June de Belle](public/screenshot.png)
 
 
 
