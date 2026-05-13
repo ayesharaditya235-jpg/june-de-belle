@@ -85,7 +85,6 @@ export const PRODUCTS: Product[] = [
     ],
     variants: [
       { name: "Blush Pink", color: "#F9B4C8", productImage: "/products/Inner Bag Pouch → foto produk.png" },
-      { name: "Ivory White", color: "#F5F2EE", productImage: "/products/Inner Bag Pouch → foto produk.png" },
       { name: "Latte Brown", color: "#C4A882", productImage: "/products/Inner Bag Pouch → foto produk coklat.png" },
     ],
     gradientFrom: "#FEF9C3",
