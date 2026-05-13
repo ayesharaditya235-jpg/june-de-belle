@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { CheckCircle, MessageCircle, Loader2, AlertCircle, X } from "lucide-react";
 import { PRODUCTS } from "@/lib/products";
 
@@ -33,6 +33,13 @@ export default function PreOrderForm() {
   const [errors, setErrors] = useState<FormErrors>({});
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
+  const successRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (status === "success") {
+      successRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }, [status]);
 
   const isSelected = (productId: string, variantName: string) =>
     selectedItems.some((i) => i.productId === productId && i.variantName === variantName);
@@ -125,7 +132,7 @@ export default function PreOrderForm() {
 
   if (status === "success") {
     return (
-      <div className="flex flex-col items-center text-center py-10 px-6">
+      <div ref={successRef} className="flex flex-col items-center text-center py-10 px-6">
         <div className="w-20 h-20 rounded-full bg-rose-50 flex items-center justify-center mb-6">
           <CheckCircle size={40} className="text-rose-500" />
         </div>
